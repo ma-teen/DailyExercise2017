@@ -1,0 +1,79 @@
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from test.cpp:8:
+/usr/include/c++/4.8/bits/stl_algo.h: In instantiation of ‘void std::sort(_RAIter, _RAIter, _Compare) [with _RAIter = std::_List_iterator<ListData>; _Compare = <anonymous struct>]’:
+test.cpp:71:65:   required from here
+/usr/include/c++/4.8/bits/stl_algo.h:5499:22: error: no match for ‘operator-’ (operand types are ‘std::_List_iterator<ListData>’ and ‘std::_List_iterator<ListData>’)
+     std::__lg(__last - __first) * 2, __comp);
+                      ^
+/usr/include/c++/4.8/bits/stl_algo.h:5499:22: note: candidates are:
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from test.cpp:4:
+/usr/include/c++/4.8/bits/stl_iterator.h:327:5: note: template<class _Iterator> typename std::reverse_iterator<_Iterator>::difference_type std::operator-(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator-(const reverse_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:327:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from test.cpp:8:
+/usr/include/c++/4.8/bits/stl_algo.h:5499:22: note:   ‘std::_List_iterator<ListData>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+     std::__lg(__last - __first) * 2, __comp);
+                      ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from test.cpp:4:
+/usr/include/c++/4.8/bits/stl_iterator.h:379:5: note: template<class _IteratorL, class _IteratorR> decltype ((__y.base() - __x.base())) std::operator-(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator-(const reverse_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:379:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from test.cpp:8:
+/usr/include/c++/4.8/bits/stl_algo.h:5499:22: note:   ‘std::_List_iterator<ListData>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+     std::__lg(__last - __first) * 2, __comp);
+                      ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from test.cpp:4:
+/usr/include/c++/4.8/bits/stl_iterator.h:1104:5: note: template<class _IteratorL, class _IteratorR> decltype ((__x.base() - __y.base())) std::operator-(const std::move_iterator<_Iterator>&, const std::move_iterator<_IteratorR>&)
+     operator-(const move_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:1104:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from test.cpp:8:
+/usr/include/c++/4.8/bits/stl_algo.h:5499:22: note:   ‘std::_List_iterator<ListData>’ is not derived from ‘const std::move_iterator<_Iterator>’
+     std::__lg(__last - __first) * 2, __comp);
+                      ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from test.cpp:4:
+/usr/include/c++/4.8/bits/stl_iterator.h:1111:5: note: template<class _Iterator> decltype ((__x.base() - __y.base())) std::operator-(const std::move_iterator<_Iterator>&, const std::move_iterator<_Iterator>&)
+     operator-(const move_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:1111:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from test.cpp:8:
+/usr/include/c++/4.8/bits/stl_algo.h:5499:22: note:   ‘std::_List_iterator<ListData>’ is not derived from ‘const std::move_iterator<_Iterator>’
+     std::__lg(__last - __first) * 2, __comp);
+                      ^
+In file included from /usr/include/c++/4.8/vector:65:0,
+                 from test.cpp:7:
+/usr/include/c++/4.8/bits/stl_bvector.h:208:3: note: std::ptrdiff_t std::operator-(const std::_Bit_iterator_base&, const std::_Bit_iterator_base&)
+   operator-(const _Bit_iterator_base& __x, const _Bit_iterator_base& __y)
+   ^
+/usr/include/c++/4.8/bits/stl_bvector.h:208:3: note:   no known conversion for argument 1 from ‘std::_List_iterator<ListData>’ to ‘const std::_Bit_iterator_base&’
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from test.cpp:8:
+/usr/include/c++/4.8/bits/stl_algo.h:2221:5: error: ‘void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = std::_List_iterator<ListData>; _Compare = <anonymous struct>]’, declared using anonymous type, is used but never defined [-fpermissive]
+     __final_insertion_sort(_RandomAccessIterator __first,
+     ^
